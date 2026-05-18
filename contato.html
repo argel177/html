@@ -1,81 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>
+        <img src="/assets/img/logo_entra21.png" alt="Entra21" height="80" />
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="js.html">JS</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="frontend_backend.html">Frontend/Backend</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content p-2">
+      <h2>Contato</h2>
 
-    <h1>
-        <img src="/assets/img/logo_entra21.png" alt="Entra21" height="80">
-    </h1>
-
-    <ul>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="js.html">JS</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="frontend_backend.html">Frontend/Backend</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-
-    <h2>Contato</h2>
-
-    <form action="form.php" method="post">
+      <form action="form.php" method="post">
         <p>Entre em contato com nosso time</p>
 
         <div>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" />
         </div>
 
         <div>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" required>
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" required />
         </div>
 
         <div>
-            <label for="cidade">Cidade:</label>
-            <select name="cidade" id="cidade">
-                <option value="">Selecione uma cidade</option>
-                <option value="itajai">Itajaí</option>
-                <option value="bc">Balneário Camboriú</option>
-                <option value="brusque">Brusque</option>
-                <option value="navegantes">Navegantes</option>
-                <option value="gaspar">Gaspar</option>
-                <option value="riodosul">Rio do Sul</option>
-                <option value="blumenau">Blumenau</option>
-            </select>
+          <label for="cidade">Cidade:</label>
+          <select name="cidade" id="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="itajai">Itajaí</option>
+            <option value="bc">Balneário Camboriú</option>
+            <option value="brusque">Brusque</option>
+            <option value="navegantes">Navegantes</option>
+            <option value="gaspar">Gaspar</option>
+            <option value="riodosul">Rio do Sul</option>
+            <option value="blumenau">Blumenau</option>
+          </select>
         </div>
 
         <div>
-            <label>Tipo:</label>
+          <label>Tipo:</label>
         </div>
 
         <div>
-            <input type="radio" name="tipo" id="tp_aluno" value="alu">
-            <label for="tp_aluno">Aluno</label>
+          <input type="radio" name="tipo" id="tp_aluno" value="alu" />
+          <label for="tp_aluno">Aluno</label>
         </div>
 
         <div>
-            <input type="radio" name="tipo" id="tp_parceiro" value="par">
-            <label for="tp_parceiro">Parceiro</label>
+          <input type="radio" name="tipo" id="tp_parceiro" value="par" />
+          <label for="tp_parceiro">Parceiro</label>
         </div>
 
         <div>
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem"></textarea>
         </div>
 
         <div>
-            <input type="checkbox" name="termos" id="termos">
-            <label for="termos">Aceito os termos de uso</label>
+          <input type="checkbox" name="termos" id="termos" />
+          <label for="termos">Aceito os termos de uso</label>
         </div>
 
         <div>
-            <button type="submit">Enviar</button>
+          <button type="submit">Enviar</button>
         </div>
-    </form>
-
-</body>
+      </form>
+    </main>
+  </body>
 </html>
